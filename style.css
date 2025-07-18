@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "Figtree", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 :root {
     --primary-color: #f5d04e;
+    --footer-color: hsl(0, 0%, 42%);
 }
 
 body {
@@ -90,10 +91,10 @@ body {
 }
 
 .head~p {
-    color: hsl(0, 0%, 42%);
+    color: var(--footer-color);
 }
 
-.parent>div:not(:first-child)>div:last-child {
+.bottom {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -101,12 +102,12 @@ body {
     gap: 15px;
 }
 
-.parent>div:not(:first-child)>div:last-child img {
+.bottom img {
     max-width: 40px;
 
 }
 
-.parent>div:not(:first-child)>div:last-child div {
+.bottom div {
     font-weight: bold;
     font-size: 18px;
 }
