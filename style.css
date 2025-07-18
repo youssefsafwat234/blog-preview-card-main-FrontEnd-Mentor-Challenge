@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25em;
     gap: 30px;
     flex-direction: column;
     background-color: white;
@@ -107,7 +107,7 @@ body {
 
 }
 
-.bottom div {
+.bottom>div:last-child {
     font-weight: bold;
     font-size: 18px;
 }
