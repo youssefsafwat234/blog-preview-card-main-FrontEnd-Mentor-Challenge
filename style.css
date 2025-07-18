@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --primary-color: #f5d04e;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px 0px 10px black;
+    border-radius: 10px;
+    min-height: 520px;
+    width: 360px;
+    margin-bottom: 40px;
+}
+
+.parent>div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent>div:first-child {
+    gap: 20px;
+}
+
+.head-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.head-content p {
+    font-size: 13px;
+}
+
+.badge {
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.image {
+    max-height: 210px;
+}
+
+.image>img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.parent>div:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.head {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.head~p {
+    color: hsl(0, 0%, 42%);
+}
+
+.parent>div:not(:first-child)>div:last-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.parent>div:not(:first-child)>div:last-child img {
+    max-width: 40px;
+
+}
+
+.parent>div:not(:first-child)>div:last-child div {
+    font-weight: bold;
+    font-size: 18px;
+}
